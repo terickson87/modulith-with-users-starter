@@ -1,1 +1,1 @@
-rootProject.name = "ModulithWithUserStarter"
+rootProject.name = "ModulithWithUsersStarter"

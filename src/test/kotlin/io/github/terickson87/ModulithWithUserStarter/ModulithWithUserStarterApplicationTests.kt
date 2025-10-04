@@ -1,13 +1,15 @@
-package io.github.terickson87.ModulithWithUserStarter
+package io.github.terickson87.ModulithWithUsersStarter
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.context.annotation.Import
 
+@Import(TestcontainersConfiguration::class)
 @SpringBootTest
-class ModulithWithUserStarterApplicationTests {
+class ModulithWithUsersStarterApplicationTests {
 
-	@Test
-	fun contextLoads() {
-	}
+  @Test
+  fun contextLoads() {
+  }
 
 }

@@ -1,11 +1,11 @@
-package io.github.terickson87.ModulithWithUserStarter
+package io.github.terickson87.ModulithWithUsersStarter
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ModulithWithUserStarterApplication
+class ModulithWithUsersStarterApplication
 
 fun main(args: Array<String>) {
-	runApplication<ModulithWithUserStarterApplication>(*args)
+	runApplication<ModulithWithUsersStarterApplication>(*args)
 }
