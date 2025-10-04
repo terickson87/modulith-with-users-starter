@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Import
 @SpringBootTest
 class ModulithWithUsersStarterApplicationTests {
 
-  @Test
-  fun contextLoads() {
-  }
+	@Test
+	fun contextLoads() {
+	}
 
 }
