@@ -51,6 +51,7 @@ Start the application locally:
 ### Testing
 - The project uses **Kotest** for testing and **MockK** for mocking dependencies.
 - Kotest's `BehaviorSpec` is used to structure test cases in a Given-When-Then style.
+- Integration tests use **Testcontainers** to spin up PostgreSQL databases in Docker.
 - Unit tests and integration tests are located in `src/test/kotlin`.
 - Example of a BDD-style test:
   ```kotlin
@@ -64,6 +65,12 @@ Start the application locally:
       }
   })
   ```
+
+### Serialization
+- The project uses **kotlinx.serialization** for serializing and deserializing DTOs in the controller layer.
+
+### Security
+- **Spring Security** is used for authentication and authorization.
 
 ### Code Style
 - Follow Kotlin conventions.
