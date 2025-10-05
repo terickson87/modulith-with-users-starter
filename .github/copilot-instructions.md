@@ -73,6 +73,10 @@ Start the application locally:
 - **Spring Security** is used for authentication and authorization.
 
 ### Code Style
+- Prefer Kotlin **data classes** for immutable data structures.
+- Use **scope functions** (`let`, `apply`, `run`, `also`, `with`) to simplify code and reduce boilerplate.
+- Emphasize **immutability** and avoid mutable state where possible.
+- Follow **functional programming paradigms**, such as using higher-order functions and avoiding side effects.
 - Follow Kotlin conventions.
 - Use meaningful names for classes, methods, and variables.
 - Keep methods short and focused.
