@@ -22,6 +22,7 @@ Use the Gradle wrapper to build the project:
 ```bash
 ./gradlew build
 ```
+Ensure that the code compiles successfully before committing changes.
 
 ### Running Tests
 Execute all tests, including integration tests, with:
@@ -47,11 +48,14 @@ Start the application locally:
 - Modules communicate via well-defined interfaces.
 - Use `@Module` annotations to define module boundaries.
 - Favor message-based asynchronous communication to decouple modules.
+- If needed, create a **common module** to house shared code used across multiple modules.
 
 ### Testing
 - The project uses **Kotest** for testing and **MockK** for mocking dependencies.
 - Kotest's `BehaviorSpec` is used to structure test cases in a Given-When-Then style.
 - Integration tests use **Testcontainers** to spin up PostgreSQL databases in Docker.
+- Unit tests must cover all methods in the module.
+- Create integration tests for all modules to ensure end-to-end functionality.
 - Unit tests and integration tests are located in `src/test/kotlin`.
 - Example of a BDD-style test:
   ```kotlin
